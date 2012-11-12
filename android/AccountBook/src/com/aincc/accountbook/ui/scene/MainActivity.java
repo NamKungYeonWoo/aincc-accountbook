@@ -1,17 +1,32 @@
-package com.aincc.accountbook;
+package com.aincc.accountbook.ui.scene;
 
 import android.os.Bundle;
 import android.view.Menu;
 
+import com.aincc.accountbook.R;
+import com.aincc.accountbook.ui.ABBaseActivity;
 import com.aincc.exchangecount.ExchangeExecutor;
 import com.aincc.exchangecount.model.KEBCurrency;
 import com.aincc.exchangecount.openapi.OpenKEBExchange;
-import com.aincc.lib.common.BaseActivity;
-import com.aincc.lib.network.common.BaseTrans;
-import com.aincc.lib.network.common.BaseTransEx;
-import com.aincc.lib.util.Logger;
+import com.aincc.network.common.BaseTrans;
+import com.aincc.network.common.BaseTransEx;
+import com.aincc.util.Logger;
 
-public class MainActivity extends BaseActivity
+/**
+ * 
+ * <h3><b>MainActivity</b></h3></br>
+ * 
+ * <h4>Main Scene</h4>
+ * <ul>
+ * <li>Initialize Database</li>
+ * <li>Update Exchange Information from KEB</li>
+ * </ul>
+ * 
+ * @author aincc@barusoft.com
+ * @version 1.0.0
+ * @since 1.0.0
+ */
+public class MainActivity extends ABBaseActivity
 {
 
 	@Override
